@@ -4,6 +4,7 @@ public class Product
 {
     public string Name {get; set; } = string.Empty;
     public decimal Value {get; set; }
+    public int Quantity {get; set; }
 }
 
 class Program
@@ -69,9 +70,9 @@ class Program
 
         string productName = Console.ReadLine() ?? "";
 
-        if (products.Any(p => p.Name.Equals(productName, StringComparison.OrdinalIgnoreCase)) || string.IsNullOrWhiteSpace(productName))
+        if (products.Any(p => p.Name.Equals(productName, StringComparison.OrdinalIgnoreCase)) || string.IsNullOrWhiteSpace(productName) || productName == "0")
         {
-            Console.WriteLine("\nO produto inválido ou já existe, tente novamente!\n");
+            Console.WriteLine("\nO nome do produto é inválido ou já existe em estoque, tente novamente!\n");
         }
         else
         {
@@ -82,13 +83,44 @@ class Program
                 return;
             }
 
+            int productQuantity = ReadProductQuantity();
+
             products.Add(new Product
             {
                 Name = productName,
-                Value = productValue
+                Value = productValue,
+                Quantity = productQuantity
             });
             Console.WriteLine("\nProduto adicionado com sucesso\n");
         }
+    }
+
+    static int ReadProductQuantity()
+    {
+        while(true)
+        {
+                try
+            {
+                Console.WriteLine("\nDigite a quantidade do produto em estoque:");
+                string input = Console.ReadLine() ?? "";
+
+                int quantity = Convert.ToInt32(input);
+
+                if (quantity <= 0)
+                    throw new Exception("\nQuantidade deve ser maior que zero.");
+                
+                return quantity;
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("\nValor inválido. Digite apenas números");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+        
     }
 
     static decimal ReadProductValue()
@@ -183,6 +215,12 @@ class Program
                 product.Value = newValue;
             }
 
+            int newQuantity = ReadProductQuantity();
+            if (newQuantity > 0)
+            {
+                product.Quantity = newQuantity;
+            }
+
             Console.WriteLine("\nProduto atualizado com sucesso!");
             return;
         }
@@ -216,7 +254,7 @@ class Program
 
         foreach(var product in products)
         {
-            Console.WriteLine($"Produto: {product.Name} | Valor: R$ {product.Value:F2}");
+            Console.WriteLine($"Produto: {product.Name} | Valor: R$ {product.Value:F2} | Quantidade: {product.Quantity}x");
         }
     }
 }
