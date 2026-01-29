@@ -2,6 +2,7 @@
 
 class Program
 {
+    // É necessário editar o path para se adequar ao local onde a pasta está alocada em sua máquina
     static string path = @"C:\Users\aluno\Desktop\bootcamp_ddt\Case1\bootcamp-deloitte-case-1\";
     static string fileName = "users.txt";
     static string filePath = path + fileName;
