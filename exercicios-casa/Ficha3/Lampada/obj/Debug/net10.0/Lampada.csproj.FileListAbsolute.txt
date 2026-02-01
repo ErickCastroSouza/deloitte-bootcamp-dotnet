@@ -1,0 +1,15 @@
+/home/erickcastro/Documentos/programação/bootcamp deloitte/deloitte-bootcamp-dotnet/exercicios-casa/Ficha3/Lampada/bin/Debug/net10.0/Lampada
+/home/erickcastro/Documentos/programação/bootcamp deloitte/deloitte-bootcamp-dotnet/exercicios-casa/Ficha3/Lampada/bin/Debug/net10.0/Lampada.deps.json
+/home/erickcastro/Documentos/programação/bootcamp deloitte/deloitte-bootcamp-dotnet/exercicios-casa/Ficha3/Lampada/bin/Debug/net10.0/Lampada.runtimeconfig.json
+/home/erickcastro/Documentos/programação/bootcamp deloitte/deloitte-bootcamp-dotnet/exercicios-casa/Ficha3/Lampada/bin/Debug/net10.0/Lampada.dll
+/home/erickcastro/Documentos/programação/bootcamp deloitte/deloitte-bootcamp-dotnet/exercicios-casa/Ficha3/Lampada/bin/Debug/net10.0/Lampada.pdb
+/home/erickcastro/Documentos/programação/bootcamp deloitte/deloitte-bootcamp-dotnet/exercicios-casa/Ficha3/Lampada/obj/Debug/net10.0/Lampada.GeneratedMSBuildEditorConfig.editorconfig
+/home/erickcastro/Documentos/programação/bootcamp deloitte/deloitte-bootcamp-dotnet/exercicios-casa/Ficha3/Lampada/obj/Debug/net10.0/Lampada.AssemblyInfoInputs.cache
+/home/erickcastro/Documentos/programação/bootcamp deloitte/deloitte-bootcamp-dotnet/exercicios-casa/Ficha3/Lampada/obj/Debug/net10.0/Lampada.AssemblyInfo.cs
+/home/erickcastro/Documentos/programação/bootcamp deloitte/deloitte-bootcamp-dotnet/exercicios-casa/Ficha3/Lampada/obj/Debug/net10.0/Lampada.csproj.CoreCompileInputs.cache
+/home/erickcastro/Documentos/programação/bootcamp deloitte/deloitte-bootcamp-dotnet/exercicios-casa/Ficha3/Lampada/obj/Debug/net10.0/Lampada.sourcelink.json
+/home/erickcastro/Documentos/programação/bootcamp deloitte/deloitte-bootcamp-dotnet/exercicios-casa/Ficha3/Lampada/obj/Debug/net10.0/Lampada.dll
+/home/erickcastro/Documentos/programação/bootcamp deloitte/deloitte-bootcamp-dotnet/exercicios-casa/Ficha3/Lampada/obj/Debug/net10.0/refint/Lampada.dll
+/home/erickcastro/Documentos/programação/bootcamp deloitte/deloitte-bootcamp-dotnet/exercicios-casa/Ficha3/Lampada/obj/Debug/net10.0/Lampada.pdb
+/home/erickcastro/Documentos/programação/bootcamp deloitte/deloitte-bootcamp-dotnet/exercicios-casa/Ficha3/Lampada/obj/Debug/net10.0/Lampada.genruntimeconfig.cache
+/home/erickcastro/Documentos/programação/bootcamp deloitte/deloitte-bootcamp-dotnet/exercicios-casa/Ficha3/Lampada/obj/Debug/net10.0/ref/Lampada.dll
