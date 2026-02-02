@@ -1,0 +1,15 @@
+/home/erickcastro/Documentos/programação/bootcamp deloitte/deloitte-bootcamp-dotnet/exercicios-casa/Ficha3/ConsultaDeNotas/bin/Debug/net10.0/ConsultaDeNotas
+/home/erickcastro/Documentos/programação/bootcamp deloitte/deloitte-bootcamp-dotnet/exercicios-casa/Ficha3/ConsultaDeNotas/bin/Debug/net10.0/ConsultaDeNotas.deps.json
+/home/erickcastro/Documentos/programação/bootcamp deloitte/deloitte-bootcamp-dotnet/exercicios-casa/Ficha3/ConsultaDeNotas/bin/Debug/net10.0/ConsultaDeNotas.runtimeconfig.json
+/home/erickcastro/Documentos/programação/bootcamp deloitte/deloitte-bootcamp-dotnet/exercicios-casa/Ficha3/ConsultaDeNotas/bin/Debug/net10.0/ConsultaDeNotas.dll
+/home/erickcastro/Documentos/programação/bootcamp deloitte/deloitte-bootcamp-dotnet/exercicios-casa/Ficha3/ConsultaDeNotas/bin/Debug/net10.0/ConsultaDeNotas.pdb
+/home/erickcastro/Documentos/programação/bootcamp deloitte/deloitte-bootcamp-dotnet/exercicios-casa/Ficha3/ConsultaDeNotas/obj/Debug/net10.0/ConsultaDeNotas.GeneratedMSBuildEditorConfig.editorconfig
+/home/erickcastro/Documentos/programação/bootcamp deloitte/deloitte-bootcamp-dotnet/exercicios-casa/Ficha3/ConsultaDeNotas/obj/Debug/net10.0/ConsultaDeNotas.AssemblyInfoInputs.cache
+/home/erickcastro/Documentos/programação/bootcamp deloitte/deloitte-bootcamp-dotnet/exercicios-casa/Ficha3/ConsultaDeNotas/obj/Debug/net10.0/ConsultaDeNotas.AssemblyInfo.cs
+/home/erickcastro/Documentos/programação/bootcamp deloitte/deloitte-bootcamp-dotnet/exercicios-casa/Ficha3/ConsultaDeNotas/obj/Debug/net10.0/ConsultaDeNotas.csproj.CoreCompileInputs.cache
+/home/erickcastro/Documentos/programação/bootcamp deloitte/deloitte-bootcamp-dotnet/exercicios-casa/Ficha3/ConsultaDeNotas/obj/Debug/net10.0/ConsultaDeNotas.sourcelink.json
+/home/erickcastro/Documentos/programação/bootcamp deloitte/deloitte-bootcamp-dotnet/exercicios-casa/Ficha3/ConsultaDeNotas/obj/Debug/net10.0/ConsultaDeNotas.dll
+/home/erickcastro/Documentos/programação/bootcamp deloitte/deloitte-bootcamp-dotnet/exercicios-casa/Ficha3/ConsultaDeNotas/obj/Debug/net10.0/refint/ConsultaDeNotas.dll
+/home/erickcastro/Documentos/programação/bootcamp deloitte/deloitte-bootcamp-dotnet/exercicios-casa/Ficha3/ConsultaDeNotas/obj/Debug/net10.0/ConsultaDeNotas.pdb
+/home/erickcastro/Documentos/programação/bootcamp deloitte/deloitte-bootcamp-dotnet/exercicios-casa/Ficha3/ConsultaDeNotas/obj/Debug/net10.0/ConsultaDeNotas.genruntimeconfig.cache
+/home/erickcastro/Documentos/programação/bootcamp deloitte/deloitte-bootcamp-dotnet/exercicios-casa/Ficha3/ConsultaDeNotas/obj/Debug/net10.0/ref/ConsultaDeNotas.dll
