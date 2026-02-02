@@ -11,7 +11,6 @@ class Mina
     {
         return this.codigo;
     }
-
     public void setCodigo(string pCodigo)
     {
         
