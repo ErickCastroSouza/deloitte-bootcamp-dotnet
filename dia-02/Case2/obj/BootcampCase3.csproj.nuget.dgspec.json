@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aluno\\Documents\\bootcamp_ddt\\dia-02\\BootcampCase3.csproj": {}
+    "C:\\Users\\aluno\\Documents\\bootcamp_ddt\\dia-02\\Case2\\BootcampCase3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aluno\\Documents\\bootcamp_ddt\\dia-02\\BootcampCase3.csproj": {
+    "C:\\Users\\aluno\\Documents\\bootcamp_ddt\\dia-02\\Case2\\BootcampCase3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aluno\\Documents\\bootcamp_ddt\\dia-02\\BootcampCase3.csproj",
+        "projectUniqueName": "C:\\Users\\aluno\\Documents\\bootcamp_ddt\\dia-02\\Case2\\BootcampCase3.csproj",
         "projectName": "BootcampCase3",
-        "projectPath": "C:\\Users\\aluno\\Documents\\bootcamp_ddt\\dia-02\\BootcampCase3.csproj",
+        "projectPath": "C:\\Users\\aluno\\Documents\\bootcamp_ddt\\dia-02\\Case2\\BootcampCase3.csproj",
         "packagesPath": "C:\\Users\\aluno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aluno\\Documents\\bootcamp_ddt\\dia-02\\obj\\",
+        "outputPath": "C:\\Users\\aluno\\Documents\\bootcamp_ddt\\dia-02\\Case2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\aluno\\AppData\\Roaming\\NuGet\\NuGet.Config"

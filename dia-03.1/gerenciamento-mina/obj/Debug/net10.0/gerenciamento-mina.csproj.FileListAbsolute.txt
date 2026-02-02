@@ -1,0 +1,15 @@
+C:\Users\aluno\Documents\bootcamp_ddt\dia-03.1\gerenciamento-mina\bin\Debug\net10.0\gerenciamento-mina.exe
+C:\Users\aluno\Documents\bootcamp_ddt\dia-03.1\gerenciamento-mina\bin\Debug\net10.0\gerenciamento-mina.deps.json
+C:\Users\aluno\Documents\bootcamp_ddt\dia-03.1\gerenciamento-mina\bin\Debug\net10.0\gerenciamento-mina.runtimeconfig.json
+C:\Users\aluno\Documents\bootcamp_ddt\dia-03.1\gerenciamento-mina\bin\Debug\net10.0\gerenciamento-mina.dll
+C:\Users\aluno\Documents\bootcamp_ddt\dia-03.1\gerenciamento-mina\bin\Debug\net10.0\gerenciamento-mina.pdb
+C:\Users\aluno\Documents\bootcamp_ddt\dia-03.1\gerenciamento-mina\obj\Debug\net10.0\gerenciamento-mina.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aluno\Documents\bootcamp_ddt\dia-03.1\gerenciamento-mina\obj\Debug\net10.0\gerenciamento-mina.AssemblyInfoInputs.cache
+C:\Users\aluno\Documents\bootcamp_ddt\dia-03.1\gerenciamento-mina\obj\Debug\net10.0\gerenciamento-mina.AssemblyInfo.cs
+C:\Users\aluno\Documents\bootcamp_ddt\dia-03.1\gerenciamento-mina\obj\Debug\net10.0\gerenciamento-mina.csproj.CoreCompileInputs.cache
+C:\Users\aluno\Documents\bootcamp_ddt\dia-03.1\gerenciamento-mina\obj\Debug\net10.0\gerenciamento-mina.sourcelink.json
+C:\Users\aluno\Documents\bootcamp_ddt\dia-03.1\gerenciamento-mina\obj\Debug\net10.0\gerenciamento-mina.dll
+C:\Users\aluno\Documents\bootcamp_ddt\dia-03.1\gerenciamento-mina\obj\Debug\net10.0\refint\gerenciamento-mina.dll
+C:\Users\aluno\Documents\bootcamp_ddt\dia-03.1\gerenciamento-mina\obj\Debug\net10.0\gerenciamento-mina.pdb
+C:\Users\aluno\Documents\bootcamp_ddt\dia-03.1\gerenciamento-mina\obj\Debug\net10.0\gerenciamento-mina.genruntimeconfig.cache
+C:\Users\aluno\Documents\bootcamp_ddt\dia-03.1\gerenciamento-mina\obj\Debug\net10.0\ref\gerenciamento-mina.dll
