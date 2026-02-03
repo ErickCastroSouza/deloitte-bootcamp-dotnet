@@ -13,3 +13,18 @@
 /home/erickcastro/Documentos/programação/bootcamp deloitte/deloitte-bootcamp-dotnet/exercicios-casa/Ficha3/ConsultaDeNotas/obj/Debug/net10.0/ConsultaDeNotas.pdb
 /home/erickcastro/Documentos/programação/bootcamp deloitte/deloitte-bootcamp-dotnet/exercicios-casa/Ficha3/ConsultaDeNotas/obj/Debug/net10.0/ConsultaDeNotas.genruntimeconfig.cache
 /home/erickcastro/Documentos/programação/bootcamp deloitte/deloitte-bootcamp-dotnet/exercicios-casa/Ficha3/ConsultaDeNotas/obj/Debug/net10.0/ref/ConsultaDeNotas.dll
+C:\Users\aluno\Documents\bootcamp_ddt\exercicios-casa\Ficha3\ConsultaDeNotas\bin\Debug\net10.0\ConsultaDeNotas.exe
+C:\Users\aluno\Documents\bootcamp_ddt\exercicios-casa\Ficha3\ConsultaDeNotas\bin\Debug\net10.0\ConsultaDeNotas.deps.json
+C:\Users\aluno\Documents\bootcamp_ddt\exercicios-casa\Ficha3\ConsultaDeNotas\bin\Debug\net10.0\ConsultaDeNotas.runtimeconfig.json
+C:\Users\aluno\Documents\bootcamp_ddt\exercicios-casa\Ficha3\ConsultaDeNotas\bin\Debug\net10.0\ConsultaDeNotas.dll
+C:\Users\aluno\Documents\bootcamp_ddt\exercicios-casa\Ficha3\ConsultaDeNotas\bin\Debug\net10.0\ConsultaDeNotas.pdb
+C:\Users\aluno\Documents\bootcamp_ddt\exercicios-casa\Ficha3\ConsultaDeNotas\obj\Debug\net10.0\ConsultaDeNotas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aluno\Documents\bootcamp_ddt\exercicios-casa\Ficha3\ConsultaDeNotas\obj\Debug\net10.0\ConsultaDeNotas.AssemblyInfoInputs.cache
+C:\Users\aluno\Documents\bootcamp_ddt\exercicios-casa\Ficha3\ConsultaDeNotas\obj\Debug\net10.0\ConsultaDeNotas.AssemblyInfo.cs
+C:\Users\aluno\Documents\bootcamp_ddt\exercicios-casa\Ficha3\ConsultaDeNotas\obj\Debug\net10.0\ConsultaDeNotas.csproj.CoreCompileInputs.cache
+C:\Users\aluno\Documents\bootcamp_ddt\exercicios-casa\Ficha3\ConsultaDeNotas\obj\Debug\net10.0\ConsultaDeNotas.sourcelink.json
+C:\Users\aluno\Documents\bootcamp_ddt\exercicios-casa\Ficha3\ConsultaDeNotas\obj\Debug\net10.0\ConsultaDeNotas.dll
+C:\Users\aluno\Documents\bootcamp_ddt\exercicios-casa\Ficha3\ConsultaDeNotas\obj\Debug\net10.0\refint\ConsultaDeNotas.dll
+C:\Users\aluno\Documents\bootcamp_ddt\exercicios-casa\Ficha3\ConsultaDeNotas\obj\Debug\net10.0\ConsultaDeNotas.pdb
+C:\Users\aluno\Documents\bootcamp_ddt\exercicios-casa\Ficha3\ConsultaDeNotas\obj\Debug\net10.0\ConsultaDeNotas.genruntimeconfig.cache
+C:\Users\aluno\Documents\bootcamp_ddt\exercicios-casa\Ficha3\ConsultaDeNotas\obj\Debug\net10.0\ref\ConsultaDeNotas.dll

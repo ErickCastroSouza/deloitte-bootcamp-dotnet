@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aluno\\Desktop\\bootcamp_ddt\\dia-01\\api-piloto\\api-piloto.csproj": {}
+    "C:\\Users\\aluno\\Documents\\bootcamp_ddt\\dia-01\\api-piloto\\api-piloto.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aluno\\Desktop\\bootcamp_ddt\\dia-01\\api-piloto\\api-piloto.csproj": {
+    "C:\\Users\\aluno\\Documents\\bootcamp_ddt\\dia-01\\api-piloto\\api-piloto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aluno\\Desktop\\bootcamp_ddt\\dia-01\\api-piloto\\api-piloto.csproj",
+        "projectUniqueName": "C:\\Users\\aluno\\Documents\\bootcamp_ddt\\dia-01\\api-piloto\\api-piloto.csproj",
         "projectName": "api-piloto",
-        "projectPath": "C:\\Users\\aluno\\Desktop\\bootcamp_ddt\\dia-01\\api-piloto\\api-piloto.csproj",
+        "projectPath": "C:\\Users\\aluno\\Documents\\bootcamp_ddt\\dia-01\\api-piloto\\api-piloto.csproj",
         "packagesPath": "C:\\Users\\aluno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aluno\\Desktop\\bootcamp_ddt\\dia-01\\api-piloto\\obj\\",
+        "outputPath": "C:\\Users\\aluno\\Documents\\bootcamp_ddt\\dia-01\\api-piloto\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\aluno\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/erickcastro/Documentos/programação/bootcamp deloitte/deloitte-bootcamp-dotnet/exercicios-casa/Ficha3/ConsultaDeNotas/ConsultaDeNotas.csproj": {}
+    "C:\\Users\\aluno\\Documents\\bootcamp_ddt\\exercicios-casa\\Ficha3\\ConsultaDeNotas\\ConsultaDeNotas.csproj": {}
   },
   "projects": {
-    "/home/erickcastro/Documentos/programação/bootcamp deloitte/deloitte-bootcamp-dotnet/exercicios-casa/Ficha3/ConsultaDeNotas/ConsultaDeNotas.csproj": {
+    "C:\\Users\\aluno\\Documents\\bootcamp_ddt\\exercicios-casa\\Ficha3\\ConsultaDeNotas\\ConsultaDeNotas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/erickcastro/Documentos/programação/bootcamp deloitte/deloitte-bootcamp-dotnet/exercicios-casa/Ficha3/ConsultaDeNotas/ConsultaDeNotas.csproj",
+        "projectUniqueName": "C:\\Users\\aluno\\Documents\\bootcamp_ddt\\exercicios-casa\\Ficha3\\ConsultaDeNotas\\ConsultaDeNotas.csproj",
         "projectName": "ConsultaDeNotas",
-        "projectPath": "/home/erickcastro/Documentos/programação/bootcamp deloitte/deloitte-bootcamp-dotnet/exercicios-casa/Ficha3/ConsultaDeNotas/ConsultaDeNotas.csproj",
-        "packagesPath": "/home/erickcastro/.nuget/packages/",
-        "outputPath": "/home/erickcastro/Documentos/programação/bootcamp deloitte/deloitte-bootcamp-dotnet/exercicios-casa/Ficha3/ConsultaDeNotas/obj/",
+        "projectPath": "C:\\Users\\aluno\\Documents\\bootcamp_ddt\\exercicios-casa\\Ficha3\\ConsultaDeNotas\\ConsultaDeNotas.csproj",
+        "packagesPath": "C:\\Users\\aluno\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aluno\\Documents\\bootcamp_ddt\\exercicios-casa\\Ficha3\\ConsultaDeNotas\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/erickcastro/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\aluno\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -59,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/erickcastro/.dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
