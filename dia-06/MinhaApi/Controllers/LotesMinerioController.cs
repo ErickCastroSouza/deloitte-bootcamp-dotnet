@@ -99,5 +99,45 @@ namespace MinhaApi.Controllers
                 lote.Status
             ));
         }
+
+        [HttpPut("{id:int}")]
+        public async Task<IActionResult> Update(int id, [FromBody] LoteMinerioUpdateDto input)
+        {
+            var lote = await _db.LotesMinerio.FindAsync(id);
+            if (lote is null)
+                return NotFound();
+
+            if (!string.IsNullOrWhiteSpace(input.CodigoLote))
+                lote.CodigoLote = input.CodigoLote;
+            if (!string.IsNullOrWhiteSpace(input.MinaOrigem))
+                lote.MinaOrigem = input.MinaOrigem;
+            if (!string.IsNullOrWhiteSpace(input.LocalizacaoAtual))
+                lote.LocalizacaoAtual = input.LocalizacaoAtual;
+            if (input.TeorFe.HasValue && input.TeorFe.Value >= 0 && input.TeorFe.Value <= 100)
+                lote.TeorFe = input.TeorFe.Value;
+            if (input.Umidade.HasValue && input.Umidade.Value >= 0 && input.Umidade.Value <= 100)
+                lote.Umidade = input.Umidade.Value;
+            if (input.SiO2.HasValue)
+                lote.SiO2 = input.SiO2.Value;
+            if (input.P.HasValue)
+                lote.P = input.P.Value;
+            if (input.Toneladas.HasValue && input.Toneladas.Value > 0)
+                lote.Toneladas = input.Toneladas.Value;
+
+            await _db.SaveChangesAsync();
+            return Ok(lote);
+        }
+
+        [HttpDelete("{id:int}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var lote = await _db.LotesMinerio.FindAsync(id);
+            if (lote is null)
+                return NotFound();
+
+            _db.LotesMinerio.Remove(lote);
+            await _db.SaveChangesAsync();
+            return NoContent();
+        }
     }
 }
