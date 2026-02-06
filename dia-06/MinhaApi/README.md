@@ -1,5 +1,4 @@
 # API simples de uma mineradora fictícia
----
 
 Funcionalidades
 - Integração com banco de dados PostgreSQL;
