@@ -56,11 +56,48 @@ namespace MinhaApi.Controllers
             return CreatedAtAction(nameof(GetById), new { id = lote.Id }, lote);
         }
 
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<LoteMinerioResponseDto>>> GetAll()
+        {
+            var lotes = await _db.LotesMinerio
+                .Select(l => new LoteMinerioResponseDto(
+                    l.Id,
+                    l.CodigoLote,
+                    l.MinaOrigem,
+                    l.LocalizacaoAtual,
+                    l.TeorFe,
+                    l.Umidade,
+                    l.SiO2,
+                    l.P,
+                    l.Toneladas,
+                    l.DataProducao,
+                    l.Status
+                ))
+                .ToListAsync();
+
+            return Ok(lotes);
+        }
+
         [HttpGet("{id:int}")]
-        public async Task<IActionResult> GetById(int id)
+        public async Task<ActionResult<LoteMinerioResponseDto>> GetById(int id)
         {
             var lote = await _db.LotesMinerio.FindAsync(id);
-            return lote is null ? NotFound() : Ok(lote);
+            if (lote is null)
+                return NotFound();
+
+            return Ok(new LoteMinerioResponseDto(
+                lote.Id,
+                lote.CodigoLote,
+                lote.MinaOrigem,
+                lote.LocalizacaoAtual,
+                lote.TeorFe,
+                lote.Umidade,
+                lote.SiO2,
+                lote.P,
+                lote.Toneladas,
+                lote.DataProducao,
+                lote.Status
+            ));
         }
     }
 }
