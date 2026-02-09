@@ -1,31 +1,106 @@
-# Check-in de Visitantes
+# Check-in de Visitantes - Bootcamp Deloitte
 
-Sistema de Controle de Check-In de Visitantes
+Este projeto consiste em uma aplicação de console desenvolvida em .NET, criada como parte das atividades práticas do **Bootcamp Deloitte Dotnet**.
+A aplicação simula um sistema de check-in de visitantes, permitindo o registro de entrada, listagem, remoção e filtragem de visitantes durante a execução do programa.
 
-Como utilizar:
+## Objetivo
 
-Ao rodar um "dotnet run" o usuário poderá escolher entre 5 opções pelo console:
+- Aplicar conceitos fundamentais da linguagem C#
+- Praticar Programação Orientada a Objetos
+- Trabalhar com listas e manipulação de dados em memória
+- Desenvolver menus interativos via terminal
+- Exercitar validação de entradas do usuário
+- Utilizar consultas com LINQ para filtragem de dados
 
-1 - Registrar novo visitante
-2 - Listar visitantes
-3 - Registrar saída de visitante
-4 - Filtrar por primeira visita
-0 - Sair
+## Funcionalidades
 
-O usuário escolhe a opção por digitar o número correspondente no console e dar ENTER.
+- Registro de novos visitantes com:
+    - Nome
+    - Identificador único
+    - Documento
+    - Horário de chegada
+    - Indicação de primeira visita
+- Listagem de todos os visitantes registrados
+- Registro de saída (remoção) de visitantes
+- Filtragem de visitantes que estão no local pela primeira vez
+- Menu interativo para navegação no sistema
 
-As opções são controladas por um método switch, cada opção é um case diferente.
+## Estrutura da Aplicação
 
-Ao registrar um visitante o usuário pode digitar um nome, documento e se é a primeira vez que o visitante está no local. O script pega essas informações e as reúne em uma List, junto do horário de chegada e de um Id gerado aleatóriamente.
+- Classe **Visitantes**
+    - Representa a entidade visitante
+    - Armazena dados pessoais e informações de check-in
+- Classe **Program**
+    - Responsável pela interação com o usuário
+    - Controle do fluxo da aplicação e exibição do menu
 
-Ao escolher a opção de listar visitantes o script usa um foreach para ler toda a List e imprimir no console toda a lista com todas as informações de cada visitante de forma ordenada.
+## Conceitos Trabalhados
 
-Ao escolher a opção de registrar a saída de visitante, o script simplesmente remove da List o visitante que o usuário digitar o nome
+- Programação Orientada a Objetos
+- Encapsulamento
+- Listas genéricas (**List<T>**)
+- LINQ (**Any**, **Where**, **FirstOrDefault**)
+- Manipulação de datas e horários (**DateTime**)
+- Controle de fluxo com **switch** e **if**
+- Geração de identificadores únicos
 
-Ao escolher a opção de filtrar por primeira visita, o script simplesmente roda um foreach pela lista e verifica em quais visitantes o bool isPrimeiraVez está como true, e retorna ao usuário apenas esses usuários.
+## Tecnologias utilizadas
 
-Ao escolher a opção de sair, o script simplesmente sai do switch do qual todas as opções estão armazenadas.
+- C#
+- .NET
+- Aplicação de Console
+- Terminal
 
+## Como Executar o Projeto
+
+### Pré-requisitos
+
+- **.NET SDK 10** instalado
+Verifique instalação com:
+```bash
+dotnet --version
+```
+
+### Execução 
+
+**1.** Clone o repositório:
+```bash
+git clone https://github.com/ErickCastroSouza/deloitte-bootcamp-dotnet.git
+cd deloitte-bootcamp-dotnet
+cd /dia-05
+cd /VisitantesCheckIn
+```
+
+**2.** Restaure as dependências:
+```bash
+dotnet restore
+```
+
+**3.** Execute a aplicação:
+```bash
+dotnet run
+```
+
+**4.** O menu de opções será exibido diretamente no terminal.
+
+## Funcionamento do Menu
+
+Ao executar a aplicação, o usuário pode escolher entre as seguintes opções:
+
+**1.** Registrar novo visitante
+**2.** Listar visitantes
+**3.** Registrar saída de visitante
+**4.** Filtrar por primeira visita
+**5.** Sair
+
+As opções são selecionadas digitando o número correspondente no terminal.
+
+## Observações
+
+- Os dados da conta são mantidos apenas em memória durante a execução do programa.
+- Não há persistência em banco de dados ou arquivos.
+- O projeto possui finalidade exclusivamente educacional.
+- As regras de negócio foram simplificadas para fins de aprendizado.
 
 
 
