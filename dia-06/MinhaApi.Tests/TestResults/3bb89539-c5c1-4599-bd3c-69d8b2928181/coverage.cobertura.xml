@@ -1,0 +1,830 @@
+<?xml version="1.0" encoding="utf-8"?>
+<coverage line-rate="0.8066" branch-rate="0.387" version="1.9" timestamp="1770749510" lines-covered="146" lines-valid="181" branches-covered="24" branches-valid="62">
+  <sources>
+    <source>C:\Users\aluno\Documents\bootcamp_ddt\dia-06\MinhaApi\</source>
+  </sources>
+  <packages>
+    <package name="MinhaApi" line-rate="0.8066" branch-rate="0.387" complexity="110">
+      <classes>
+        <class name="MinhaApi.Models.LoteMinerio" filename="Models\LoteMinerio.cs" line-rate="1" branch-rate="1" complexity="11">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="16" hits="4" branch="False" />
+              </lines>
+            </method>
+            <method name="get_CodigoLote" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="19" hits="23" branch="False" />
+              </lines>
+            </method>
+            <method name="get_MinaOrigem" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="22" hits="22" branch="False" />
+              </lines>
+            </method>
+            <method name="get_LocalizacaoAtual" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="25" hits="16" branch="False" />
+              </lines>
+            </method>
+            <method name="get_TeorFe" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="28" hits="6" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Umidade" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="31" hits="6" branch="False" />
+              </lines>
+            </method>
+            <method name="get_SiO2" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="34" hits="6" branch="False" />
+              </lines>
+            </method>
+            <method name="get_P" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="37" hits="7" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Toneladas" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="40" hits="6" branch="False" />
+              </lines>
+            </method>
+            <method name="get_DataProducao" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="43" hits="6" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Status" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="46" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="16" hits="4" branch="False" />
+            <line number="19" hits="23" branch="False" />
+            <line number="22" hits="22" branch="False" />
+            <line number="25" hits="16" branch="False" />
+            <line number="28" hits="6" branch="False" />
+            <line number="31" hits="6" branch="False" />
+            <line number="34" hits="6" branch="False" />
+            <line number="37" hits="7" branch="False" />
+            <line number="40" hits="6" branch="False" />
+            <line number="43" hits="6" branch="False" />
+            <line number="46" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="MinhaApi.Dtos.CreateLoteMinerioDto" filename="Dtos\CreateLoteMinerioDto.cs" line-rate="1" branch-rate="1" complexity="10">
+          <methods>
+            <method name="get_CodigoLote" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="5" hits="16" branch="False" />
+              </lines>
+            </method>
+            <method name="get_MinaOrigem" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="6" hits="16" branch="False" />
+              </lines>
+            </method>
+            <method name="get_TeorFe" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="7" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Umidade" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="5" branch="False" />
+              </lines>
+            </method>
+            <method name="get_SiO2" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="5" branch="False" />
+              </lines>
+            </method>
+            <method name="get_P" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="5" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Toneladas" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="5" branch="False" />
+              </lines>
+            </method>
+            <method name="get_DataProducao" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="5" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Status" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="2" branch="False" />
+              </lines>
+            </method>
+            <method name="get_LocalizacaoAtual" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="14" hits="12" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="5" hits="16" branch="False" />
+            <line number="6" hits="16" branch="False" />
+            <line number="7" hits="7" branch="False" />
+            <line number="8" hits="5" branch="False" />
+            <line number="9" hits="5" branch="False" />
+            <line number="10" hits="5" branch="False" />
+            <line number="11" hits="5" branch="False" />
+            <line number="12" hits="5" branch="False" />
+            <line number="13" hits="2" branch="False" />
+            <line number="14" hits="12" branch="False" />
+          </lines>
+        </class>
+        <class name="MinhaApi.Dtos.LoteMinerioResponseDto" filename="Dtos\LoteMinerioResponseDto.cs" line-rate="1" branch-rate="1" complexity="12">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="6" hits="4" branch="False" />
+              </lines>
+            </method>
+            <method name="get_CodigoLote" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="4" branch="False" />
+              </lines>
+            </method>
+            <method name="get_MinaOrigem" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="2" branch="False" />
+              </lines>
+            </method>
+            <method name="get_LocalizacaoAtual" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="2" branch="False" />
+              </lines>
+            </method>
+            <method name="get_TeorFe" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="2" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Umidade" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="2" branch="False" />
+              </lines>
+            </method>
+            <method name="get_SiO2" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="2" branch="False" />
+              </lines>
+            </method>
+            <method name="get_P" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="2" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Toneladas" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="14" hits="2" branch="False" />
+              </lines>
+            </method>
+            <method name="get_DataProducao" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="15" hits="2" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Status" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="16" hits="2" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(System.Int32,System.String,System.String,System.String,System.Decimal,System.Decimal,System.Nullable`1&lt;System.Decimal&gt;,System.Nullable`1&lt;System.Decimal&gt;,System.Decimal,System.DateTime,MinhaApi.Models.StatusLote)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="5" hits="5" branch="False" />
+                <line number="17" hits="5" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="6" hits="4" branch="False" />
+            <line number="7" hits="4" branch="False" />
+            <line number="8" hits="2" branch="False" />
+            <line number="9" hits="2" branch="False" />
+            <line number="10" hits="2" branch="False" />
+            <line number="11" hits="2" branch="False" />
+            <line number="12" hits="2" branch="False" />
+            <line number="13" hits="2" branch="False" />
+            <line number="14" hits="2" branch="False" />
+            <line number="15" hits="2" branch="False" />
+            <line number="16" hits="2" branch="False" />
+            <line number="5" hits="5" branch="False" />
+            <line number="17" hits="5" branch="False" />
+          </lines>
+        </class>
+        <class name="MinhaApi.Dtos.LoteMinerioUpdateDto" filename="Dtos\LoteMinerioUpdateDto.cs" line-rate="1" branch-rate="1" complexity="10">
+          <methods>
+            <method name="get_LocalizacaoAtual" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="11" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Status" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="7" branch="False" />
+              </lines>
+            </method>
+            <method name="get_TeorFe" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="6" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Umidade" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="6" branch="False" />
+              </lines>
+            </method>
+            <method name="get_SiO2" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="6" branch="False" />
+              </lines>
+            </method>
+            <method name="get_P" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="6" branch="False" />
+              </lines>
+            </method>
+            <method name="get_Toneladas" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="6" branch="False" />
+              </lines>
+            </method>
+            <method name="get_DataProducao" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="14" hits="5" branch="False" />
+              </lines>
+            </method>
+            <method name="get_MinaOrigem" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="15" hits="9" branch="False" />
+              </lines>
+            </method>
+            <method name="get_CodigoLote" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="16" hits="11" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="7" hits="11" branch="False" />
+            <line number="8" hits="7" branch="False" />
+            <line number="9" hits="6" branch="False" />
+            <line number="10" hits="6" branch="False" />
+            <line number="11" hits="6" branch="False" />
+            <line number="12" hits="6" branch="False" />
+            <line number="13" hits="6" branch="False" />
+            <line number="14" hits="5" branch="False" />
+            <line number="15" hits="9" branch="False" />
+            <line number="16" hits="11" branch="False" />
+          </lines>
+        </class>
+        <class name="MinhaApi.Data.AppDbContext" filename="Data\AppDbContext.cs" line-rate="1" branch-rate="1" complexity="3">
+          <methods>
+            <method name="get_LotesMinerio" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="19" branch="False" />
+              </lines>
+            </method>
+            <method name="OnModelCreating" signature="(Microsoft.EntityFrameworkCore.ModelBuilder)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="1" branch="False" />
+                <line number="14" hits="1" branch="False" />
+                <line number="16" hits="1" branch="False" />
+                <line number="17" hits="1" branch="False" />
+                <line number="18" hits="1" branch="False" />
+                <line number="19" hits="1" branch="False" />
+                <line number="20" hits="1" branch="False" />
+                <line number="21" hits="1" branch="False" />
+                <line number="22" hits="1" branch="False" />
+                <line number="23" hits="1" branch="False" />
+                <line number="24" hits="1" branch="False" />
+                <line number="25" hits="1" branch="False" />
+                <line number="26" hits="1" branch="False" />
+                <line number="27" hits="1" branch="False" />
+                <line number="28" hits="1" branch="False" />
+                <line number="29" hits="1" branch="False" />
+                <line number="30" hits="1" branch="False" />
+                <line number="31" hits="1" branch="False" />
+                <line number="32" hits="1" branch="False" />
+                <line number="33" hits="1" branch="False" />
+                <line number="34" hits="1" branch="False" />
+                <line number="35" hits="1" branch="False" />
+                <line number="36" hits="1" branch="False" />
+                <line number="37" hits="1" branch="False" />
+                <line number="38" hits="1" branch="False" />
+                <line number="39" hits="1" branch="False" />
+                <line number="40" hits="1" branch="False" />
+                <line number="41" hits="1" branch="False" />
+                <line number="42" hits="1" branch="False" />
+                <line number="43" hits="1" branch="False" />
+                <line number="44" hits="2" branch="False" />
+                <line number="45" hits="1" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(Microsoft.EntityFrameworkCore.DbContextOptions`1&lt;MinhaApi.Data.AppDbContext&gt;)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="42" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="10" hits="19" branch="False" />
+            <line number="13" hits="1" branch="False" />
+            <line number="14" hits="1" branch="False" />
+            <line number="16" hits="1" branch="False" />
+            <line number="17" hits="1" branch="False" />
+            <line number="18" hits="1" branch="False" />
+            <line number="19" hits="1" branch="False" />
+            <line number="20" hits="1" branch="False" />
+            <line number="21" hits="1" branch="False" />
+            <line number="22" hits="1" branch="False" />
+            <line number="23" hits="1" branch="False" />
+            <line number="24" hits="1" branch="False" />
+            <line number="25" hits="1" branch="False" />
+            <line number="26" hits="1" branch="False" />
+            <line number="27" hits="1" branch="False" />
+            <line number="28" hits="1" branch="False" />
+            <line number="29" hits="1" branch="False" />
+            <line number="30" hits="1" branch="False" />
+            <line number="31" hits="1" branch="False" />
+            <line number="32" hits="1" branch="False" />
+            <line number="33" hits="1" branch="False" />
+            <line number="34" hits="1" branch="False" />
+            <line number="35" hits="1" branch="False" />
+            <line number="36" hits="1" branch="False" />
+            <line number="37" hits="1" branch="False" />
+            <line number="38" hits="1" branch="False" />
+            <line number="39" hits="1" branch="False" />
+            <line number="40" hits="1" branch="False" />
+            <line number="41" hits="1" branch="False" />
+            <line number="42" hits="1" branch="False" />
+            <line number="43" hits="1" branch="False" />
+            <line number="44" hits="2" branch="False" />
+            <line number="45" hits="1" branch="False" />
+            <line number="8" hits="42" branch="False" />
+          </lines>
+        </class>
+        <class name="MinhaApi.Controllers.LotesMinerioController" filename="Controllers\LotesMinerioController.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name=".ctor" signature="(MinhaApi.Data.AppDbContext)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="15" hits="12" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="15" hits="12" branch="False" />
+          </lines>
+        </class>
+        <class name="MinhaApi.Controllers.LotesMinerioController/&lt;Create&gt;d__2" filename="Controllers\LotesMinerioController.cs" line-rate="0.1714" branch-rate="0.1" complexity="30">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0.1714" branch-rate="0.1" complexity="30">
+              <lines>
+                <line number="19" hits="2" branch="False" />
+                <line number="20" hits="2" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="80" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="21" hits="0" branch="False" />
+                <line number="22" hits="2" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="127" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="23" hits="0" branch="False" />
+                <line number="24" hits="2" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="176" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="25" hits="2" branch="False" />
+                <line number="26" hits="0" branch="True" condition-coverage="0% (0/6)">
+                  <conditions>
+                    <condition number="230" type="jump" coverage="0%" />
+                    <condition number="246" type="jump" coverage="0%" />
+                    <condition number="264" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="27" hits="0" branch="False" />
+                <line number="28" hits="0" branch="True" condition-coverage="0% (0/6)">
+                  <conditions>
+                    <condition number="318" type="jump" coverage="0%" />
+                    <condition number="334" type="jump" coverage="0%" />
+                    <condition number="352" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="29" hits="0" branch="False" />
+                <line number="30" hits="0" branch="True" condition-coverage="0% (0/2)">
+                  <conditions>
+                    <condition number="406" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="31" hits="0" branch="False" />
+                <line number="32" hits="0" branch="True" condition-coverage="0% (0/6)">
+                  <conditions>
+                    <condition number="451" type="jump" coverage="0%" />
+                    <condition number="456" type="jump" coverage="0%" />
+                    <condition number="474" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="33" hits="0" branch="False" />
+                <line number="35" hits="0" branch="False" />
+                <line number="36" hits="0" branch="True" condition-coverage="0% (0/2)">
+                  <conditions>
+                    <condition number="771" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="37" hits="0" branch="False" />
+                <line number="39" hits="0" branch="True" condition-coverage="0% (0/2)">
+                  <conditions>
+                    <condition number="1014" type="jump" coverage="0%" />
+                  </conditions>
+                </line>
+                <line number="40" hits="0" branch="False" />
+                <line number="41" hits="0" branch="False" />
+                <line number="42" hits="0" branch="False" />
+                <line number="43" hits="0" branch="False" />
+                <line number="44" hits="0" branch="False" />
+                <line number="45" hits="0" branch="False" />
+                <line number="46" hits="0" branch="False" />
+                <line number="47" hits="0" branch="False" />
+                <line number="48" hits="0" branch="False" />
+                <line number="49" hits="0" branch="False" />
+                <line number="50" hits="0" branch="False" />
+                <line number="51" hits="0" branch="False" />
+                <line number="53" hits="0" branch="False" />
+                <line number="54" hits="0" branch="False" />
+                <line number="56" hits="0" branch="False" />
+                <line number="57" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="19" hits="2" branch="False" />
+            <line number="20" hits="2" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="80" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="21" hits="0" branch="False" />
+            <line number="22" hits="2" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="127" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="23" hits="0" branch="False" />
+            <line number="24" hits="2" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="176" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="25" hits="2" branch="False" />
+            <line number="26" hits="0" branch="True" condition-coverage="0% (0/6)">
+              <conditions>
+                <condition number="230" type="jump" coverage="0%" />
+                <condition number="246" type="jump" coverage="0%" />
+                <condition number="264" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="27" hits="0" branch="False" />
+            <line number="28" hits="0" branch="True" condition-coverage="0% (0/6)">
+              <conditions>
+                <condition number="318" type="jump" coverage="0%" />
+                <condition number="334" type="jump" coverage="0%" />
+                <condition number="352" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="29" hits="0" branch="False" />
+            <line number="30" hits="0" branch="True" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="406" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="31" hits="0" branch="False" />
+            <line number="32" hits="0" branch="True" condition-coverage="0% (0/6)">
+              <conditions>
+                <condition number="451" type="jump" coverage="0%" />
+                <condition number="456" type="jump" coverage="0%" />
+                <condition number="474" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="33" hits="0" branch="False" />
+            <line number="35" hits="0" branch="False" />
+            <line number="36" hits="0" branch="True" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="771" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="37" hits="0" branch="False" />
+            <line number="39" hits="0" branch="True" condition-coverage="0% (0/2)">
+              <conditions>
+                <condition number="1014" type="jump" coverage="0%" />
+              </conditions>
+            </line>
+            <line number="40" hits="0" branch="False" />
+            <line number="41" hits="0" branch="False" />
+            <line number="42" hits="0" branch="False" />
+            <line number="43" hits="0" branch="False" />
+            <line number="44" hits="0" branch="False" />
+            <line number="45" hits="0" branch="False" />
+            <line number="46" hits="0" branch="False" />
+            <line number="47" hits="0" branch="False" />
+            <line number="48" hits="0" branch="False" />
+            <line number="49" hits="0" branch="False" />
+            <line number="50" hits="0" branch="False" />
+            <line number="51" hits="0" branch="False" />
+            <line number="53" hits="0" branch="False" />
+            <line number="54" hits="0" branch="False" />
+            <line number="56" hits="0" branch="False" />
+            <line number="57" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="MinhaApi.Controllers.LotesMinerioController/&lt;Delete&gt;d__6" filename="Controllers\LotesMinerioController.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="133" hits="2" branch="False" />
+                <line number="134" hits="2" branch="False" />
+                <line number="135" hits="2" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="198" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="136" hits="1" branch="False" />
+                <line number="138" hits="1" branch="False" />
+                <line number="139" hits="1" branch="False" />
+                <line number="140" hits="1" branch="False" />
+                <line number="141" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="133" hits="2" branch="False" />
+            <line number="134" hits="2" branch="False" />
+            <line number="135" hits="2" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="198" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="136" hits="1" branch="False" />
+            <line number="138" hits="1" branch="False" />
+            <line number="139" hits="1" branch="False" />
+            <line number="140" hits="1" branch="False" />
+            <line number="141" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="MinhaApi.Controllers.LotesMinerioController/&lt;GetAll&gt;d__3" filename="Controllers\LotesMinerioController.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="61" hits="1" branch="False" />
+                <line number="62" hits="1" branch="False" />
+                <line number="63" hits="1" branch="False" />
+                <line number="64" hits="1" branch="False" />
+                <line number="65" hits="1" branch="False" />
+                <line number="66" hits="1" branch="False" />
+                <line number="67" hits="1" branch="False" />
+                <line number="68" hits="1" branch="False" />
+                <line number="69" hits="1" branch="False" />
+                <line number="70" hits="1" branch="False" />
+                <line number="71" hits="1" branch="False" />
+                <line number="72" hits="1" branch="False" />
+                <line number="73" hits="1" branch="False" />
+                <line number="74" hits="1" branch="False" />
+                <line number="75" hits="1" branch="False" />
+                <line number="76" hits="1" branch="False" />
+                <line number="78" hits="1" branch="False" />
+                <line number="79" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="61" hits="1" branch="False" />
+            <line number="62" hits="1" branch="False" />
+            <line number="63" hits="1" branch="False" />
+            <line number="64" hits="1" branch="False" />
+            <line number="65" hits="1" branch="False" />
+            <line number="66" hits="1" branch="False" />
+            <line number="67" hits="1" branch="False" />
+            <line number="68" hits="1" branch="False" />
+            <line number="69" hits="1" branch="False" />
+            <line number="70" hits="1" branch="False" />
+            <line number="71" hits="1" branch="False" />
+            <line number="72" hits="1" branch="False" />
+            <line number="73" hits="1" branch="False" />
+            <line number="74" hits="1" branch="False" />
+            <line number="75" hits="1" branch="False" />
+            <line number="76" hits="1" branch="False" />
+            <line number="78" hits="1" branch="False" />
+            <line number="79" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="MinhaApi.Controllers.LotesMinerioController/&lt;GetById&gt;d__4" filename="Controllers\LotesMinerioController.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="83" hits="2" branch="False" />
+                <line number="84" hits="2" branch="False" />
+                <line number="85" hits="2" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="187" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="86" hits="1" branch="False" />
+                <line number="88" hits="1" branch="False" />
+                <line number="89" hits="1" branch="False" />
+                <line number="90" hits="1" branch="False" />
+                <line number="91" hits="1" branch="False" />
+                <line number="92" hits="1" branch="False" />
+                <line number="93" hits="1" branch="False" />
+                <line number="94" hits="1" branch="False" />
+                <line number="95" hits="1" branch="False" />
+                <line number="96" hits="1" branch="False" />
+                <line number="97" hits="1" branch="False" />
+                <line number="98" hits="1" branch="False" />
+                <line number="99" hits="1" branch="False" />
+                <line number="100" hits="1" branch="False" />
+                <line number="101" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="83" hits="2" branch="False" />
+            <line number="84" hits="2" branch="False" />
+            <line number="85" hits="2" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="187" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="86" hits="1" branch="False" />
+            <line number="88" hits="1" branch="False" />
+            <line number="89" hits="1" branch="False" />
+            <line number="90" hits="1" branch="False" />
+            <line number="91" hits="1" branch="False" />
+            <line number="92" hits="1" branch="False" />
+            <line number="93" hits="1" branch="False" />
+            <line number="94" hits="1" branch="False" />
+            <line number="95" hits="1" branch="False" />
+            <line number="96" hits="1" branch="False" />
+            <line number="97" hits="1" branch="False" />
+            <line number="98" hits="1" branch="False" />
+            <line number="99" hits="1" branch="False" />
+            <line number="100" hits="1" branch="False" />
+            <line number="101" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="MinhaApi.Controllers.LotesMinerioController/&lt;Update&gt;d__5" filename="Controllers\LotesMinerioController.cs" line-rate="0.7391" branch-rate="0.6071" complexity="28">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="0.7391" branch-rate="0.6071" complexity="28">
+              <lines>
+                <line number="105" hits="2" branch="False" />
+                <line number="106" hits="2" branch="False" />
+                <line number="107" hits="2" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="198" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="108" hits="1" branch="False" />
+                <line number="110" hits="1" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="240" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="111" hits="1" branch="False" />
+                <line number="112" hits="1" branch="True" condition-coverage="100% (2/2)">
+                  <conditions>
+                    <condition number="288" type="jump" coverage="100%" />
+                  </conditions>
+                </line>
+                <line number="113" hits="1" branch="False" />
+                <line number="114" hits="1" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="336" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="115" hits="0" branch="False" />
+                <line number="116" hits="1" branch="True" condition-coverage="50% (3/6)">
+                  <conditions>
+                    <condition number="381" type="jump" coverage="50%" />
+                    <condition number="413" type="jump" coverage="50%" />
+                    <condition number="454" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="117" hits="0" branch="False" />
+                <line number="118" hits="1" branch="True" condition-coverage="50% (3/6)">
+                  <conditions>
+                    <condition number="508" type="jump" coverage="50%" />
+                    <condition number="540" type="jump" coverage="50%" />
+                    <condition number="581" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="119" hits="0" branch="False" />
+                <line number="120" hits="1" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="639" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="121" hits="0" branch="False" />
+                <line number="122" hits="1" branch="True" condition-coverage="50% (1/2)">
+                  <conditions>
+                    <condition number="702" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="123" hits="0" branch="False" />
+                <line number="124" hits="1" branch="True" condition-coverage="50% (2/4)">
+                  <conditions>
+                    <condition number="761" type="jump" coverage="50%" />
+                    <condition number="800" type="jump" coverage="50%" />
+                  </conditions>
+                </line>
+                <line number="125" hits="0" branch="False" />
+                <line number="127" hits="1" branch="False" />
+                <line number="128" hits="1" branch="False" />
+                <line number="129" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="105" hits="2" branch="False" />
+            <line number="106" hits="2" branch="False" />
+            <line number="107" hits="2" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="198" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="108" hits="1" branch="False" />
+            <line number="110" hits="1" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="240" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="111" hits="1" branch="False" />
+            <line number="112" hits="1" branch="True" condition-coverage="100% (2/2)">
+              <conditions>
+                <condition number="288" type="jump" coverage="100%" />
+              </conditions>
+            </line>
+            <line number="113" hits="1" branch="False" />
+            <line number="114" hits="1" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="336" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="115" hits="0" branch="False" />
+            <line number="116" hits="1" branch="True" condition-coverage="50% (3/6)">
+              <conditions>
+                <condition number="381" type="jump" coverage="50%" />
+                <condition number="413" type="jump" coverage="50%" />
+                <condition number="454" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="117" hits="0" branch="False" />
+            <line number="118" hits="1" branch="True" condition-coverage="50% (3/6)">
+              <conditions>
+                <condition number="508" type="jump" coverage="50%" />
+                <condition number="540" type="jump" coverage="50%" />
+                <condition number="581" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="119" hits="0" branch="False" />
+            <line number="120" hits="1" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="639" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="121" hits="0" branch="False" />
+            <line number="122" hits="1" branch="True" condition-coverage="50% (1/2)">
+              <conditions>
+                <condition number="702" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="123" hits="0" branch="False" />
+            <line number="124" hits="1" branch="True" condition-coverage="50% (2/4)">
+              <conditions>
+                <condition number="761" type="jump" coverage="50%" />
+                <condition number="800" type="jump" coverage="50%" />
+              </conditions>
+            </line>
+            <line number="125" hits="0" branch="False" />
+            <line number="127" hits="1" branch="False" />
+            <line number="128" hits="1" branch="False" />
+            <line number="129" hits="2" branch="False" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+  </packages>
+</coverage>
