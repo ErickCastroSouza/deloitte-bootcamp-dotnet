@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aluno\\Documents\\bootcamp_ddt\\dia-06\\MinhaApi\\MinhaApi.csproj": {}
+    "/home/erickcastro/Documentos/programação/bootcamp deloitte/deloitte-bootcamp-dotnet/dia-06/MinhaApi/MinhaApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aluno\\Documents\\bootcamp_ddt\\dia-06\\MinhaApi\\MinhaApi.csproj": {
+    "/home/erickcastro/Documentos/programação/bootcamp deloitte/deloitte-bootcamp-dotnet/dia-06/MinhaApi/MinhaApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aluno\\Documents\\bootcamp_ddt\\dia-06\\MinhaApi\\MinhaApi.csproj",
+        "projectUniqueName": "/home/erickcastro/Documentos/programação/bootcamp deloitte/deloitte-bootcamp-dotnet/dia-06/MinhaApi/MinhaApi.csproj",
         "projectName": "MinhaApi",
-        "projectPath": "C:\\Users\\aluno\\Documents\\bootcamp_ddt\\dia-06\\MinhaApi\\MinhaApi.csproj",
-        "packagesPath": "C:\\Users\\aluno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aluno\\Documents\\bootcamp_ddt\\dia-06\\MinhaApi\\obj\\",
+        "projectPath": "/home/erickcastro/Documentos/programação/bootcamp deloitte/deloitte-bootcamp-dotnet/dia-06/MinhaApi/MinhaApi.csproj",
+        "packagesPath": "/home/erickcastro/.nuget/packages/",
+        "outputPath": "/home/erickcastro/Documentos/programação/bootcamp deloitte/deloitte-bootcamp-dotnet/dia-06/MinhaApi/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\aluno\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/erickcastro/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -62,9 +62,17 @@
               "target": "Package",
               "version": "[10.0.2, )"
             },
+            "Microsoft.Extensions.Caching.StackExchangeRedis": {
+              "target": "Package",
+              "version": "[10.0.3, )"
+            },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[10.0.0, )"
+            },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.11.0, )"
             }
           },
           "imports": [
@@ -86,7 +94,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "/home/erickcastro/.dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.AspNetCore": "(,10.0.32767]",
             "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",

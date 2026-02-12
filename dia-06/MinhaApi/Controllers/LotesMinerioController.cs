@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using MinhaApi.Data;
 using MinhaApi.Models;
 using MinhaApi.Dtos;
+using MinhaApi.Queue;
 
 namespace MinhaApi.Controllers
 {
@@ -12,7 +13,15 @@ namespace MinhaApi.Controllers
     {
         private readonly AppDbContext _db;
 
-        public LotesMinerioController(AppDbContext db) => _db = db;
+        private readonly ILoteQueueProducer _queue;
+
+        
+        public LotesMinerioController(AppDbContext db, ILoteQueueProducer queue)
+        {
+            _db = db;
+            _queue = queue;
+        }
+
 
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] CreateLoteMinerioDto input)
@@ -53,91 +62,98 @@ namespace MinhaApi.Controllers
             _db.LotesMinerio.Add(lote);
             await _db.SaveChangesAsync();
 
+            
+            await _queue.EnfileirarAsync(new ProcessarLoteMessage(
+                LoteId: lote.Id,
+                CodigoLote: lote.CodigoLote,
+                TeorFe: lote.TeorFe,
+                Umidade: lote.Umidade,
+                DataProducaoUtc: lote.DataProducao,
+                Acao: "RecalcularClassificacao"
+            ));
+            
             return CreatedAtAction(nameof(GetById), new { id = lote.Id }, lote);
         }
 
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<LoteMinerioResponseDto>>> GetAll()
+        [HttpGet("{id:int}")]
+        
+        public async Task<IActionResult> GetById(int id)
         {
-            var lotes = await _db.LotesMinerio
-                .Select(l => new LoteMinerioResponseDto(
-                    l.Id,
-                    l.CodigoLote,
-                    l.MinaOrigem,
-                    l.LocalizacaoAtual,
-                    l.TeorFe,
-                    l.Umidade,
-                    l.SiO2,
-                    l.P,
-                    l.Toneladas,
-                    l.DataProducao,
-                    l.Status
-                ))
-                .ToListAsync();
+            var l = await _db.LotesMinerio.AsNoTracking().FirstOrDefaultAsync(x => x.Id == id);
+            if (l is null) return NotFound();
 
-            return Ok(lotes);
+            var dto = new LoteMinerioResponseDto(
+                l.Id, l.CodigoLote, l.MinaOrigem, l.TeorFe, l.Umidade, l.SiO2, l.P,
+                l.Toneladas, l.DataProducao, l.Status, l.LocalizacaoAtual
+            );
+
+            return Ok(dto);
         }
 
-        [HttpGet("{id:int}")]
-        public async Task<ActionResult<LoteMinerioResponseDto>> GetById(int id)
+        
+        [HttpGet("")]
+        
+        public async Task<IActionResult> GetAll()
         {
-            var lote = await _db.LotesMinerio.FindAsync(id);
-            if (lote is null)
-                return NotFound();
-
-            return Ok(new LoteMinerioResponseDto(
-                lote.Id,
-                lote.CodigoLote,
-                lote.MinaOrigem,
-                lote.LocalizacaoAtual,
-                lote.TeorFe,
-                lote.Umidade,
-                lote.SiO2,
-                lote.P,
-                lote.Toneladas,
-                lote.DataProducao,
-                lote.Status
-            ));
+            var lotes = await _db.LotesMinerio.AsNoTracking().ToListAsync();
+            return Ok(lotes);
         }
 
         [HttpPut("{id:int}")]
         public async Task<IActionResult> Update(int id, [FromBody] LoteMinerioUpdateDto input)
         {
-            var lote = await _db.LotesMinerio.FindAsync(id);
-            if (lote is null)
-                return NotFound();
+            // Validações básicas
+            if (string.IsNullOrWhiteSpace(input.MinaOrigem))
+                return BadRequest("MinaOrigem é obrigatória.");
+            if (string.IsNullOrWhiteSpace(input.LocalizacaoAtual))
+                return BadRequest("LocalizacaoAtual é obrigatória.");
+            if (input.TeorFe is < 0 or > 100)
+                return BadRequest("TeorFe deve estar entre 0 e 100 (%).");
+            if (input.Umidade is < 0 or > 100)
+                return BadRequest("Umidade deve estar entre 0 e 100 (%).");
+            if (input.Toneladas <= 0)
+                return BadRequest("Toneladas deve ser > 0.");
+            if (input.Status is < 0 or > 2)
+                return BadRequest("Status inválido (use 0, 1 ou 2).");
 
-            if (!string.IsNullOrWhiteSpace(input.CodigoLote))
-                lote.CodigoLote = input.CodigoLote;
-            if (!string.IsNullOrWhiteSpace(input.MinaOrigem))
-                lote.MinaOrigem = input.MinaOrigem;
-            if (!string.IsNullOrWhiteSpace(input.LocalizacaoAtual))
-                lote.LocalizacaoAtual = input.LocalizacaoAtual;
-            if (input.TeorFe.HasValue && input.TeorFe.Value >= 0 && input.TeorFe.Value <= 100)
-                lote.TeorFe = input.TeorFe.Value;
-            if (input.Umidade.HasValue && input.Umidade.Value >= 0 && input.Umidade.Value <= 100)
-                lote.Umidade = input.Umidade.Value;
-            if (input.SiO2.HasValue)
-                lote.SiO2 = input.SiO2.Value;
-            if (input.P.HasValue)
-                lote.P = input.P.Value;
-            if (input.Toneladas.HasValue && input.Toneladas.Value > 0)
-                lote.Toneladas = input.Toneladas.Value;
+            var lote = await _db.LotesMinerio.FirstOrDefaultAsync(x => x.Id == id);
+            if (lote is null) return NotFound();
+
+            // Atualiza campos (CodigoLote não muda aqui)
+            lote.MinaOrigem = input.MinaOrigem;
+            lote.TeorFe = input.TeorFe;
+            lote.Umidade = input.Umidade;
+            lote.SiO2 = input.SiO2;
+            lote.P = input.P;
+            lote.Toneladas = input.Toneladas;
+            lote.DataProducao = input.DataProducao ?? lote.DataProducao;
+            lote.Status = (StatusLote)input.Status;
+            lote.LocalizacaoAtual = input.LocalizacaoAtual;
 
             await _db.SaveChangesAsync();
-            return Ok(lote);
+            return NoContent(); // 204
         }
-
+        
         [HttpDelete("{id:int}")]
         public async Task<IActionResult> Delete(int id)
         {
-            var lote = await _db.LotesMinerio.FindAsync(id);
+            var lote = await _db.LotesMinerio.FirstOrDefaultAsync(x => x.Id == id);
             if (lote is null)
-                return NotFound();
+                return NotFound(); // 404
 
             _db.LotesMinerio.Remove(lote);
-            await _db.SaveChangesAsync();
-            return NoContent();
+
+            try
+            {
+                await _db.SaveChangesAsync();
+                return NoContent(); // 204
+            }
+            catch (DbUpdateException ex)
+            {
+                // Ex.: violação de FK se houver dependências (movimentações, notas, etc.)
+                return Conflict("Não foi possível excluir o lote. Ele pode estar relacionado a outros registros.");
+            }
         }
+
     }
 }

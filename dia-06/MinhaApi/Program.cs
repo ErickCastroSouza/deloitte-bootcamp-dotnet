@@ -1,22 +1,50 @@
 using Microsoft.EntityFrameworkCore;
-using MinhaApi.Data;
+using MinhaApi.Data; 
+using StackExchange.Redis;
+using MinhaApi.Queue;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container
-builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 
+// Registro do DbContext com Npgsql
+
 builder.Services.AddDbContext<AppDbContext>(options =>
+{
+    var cs = builder.Configuration.GetConnectionString("DefaultConnection"); 
     options
-        .UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"))
-        .UseSnakeCaseNamingConvention()
-);
+        .UseNpgsql(cs)
+        .UseSnakeCaseNamingConvention();
+});
+
+
+// Recomendação do Npgsql para compatibilidade de timestamp (se aplicável)
+AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
+
+builder.Services.AddControllers();
+
+
+// Redis ConnectionMultiplexer como Singleton
+builder.Services.AddSingleton<IConnectionMultiplexer>(sp =>
+{
+    var cs = builder.Configuration["Redis:ConnectionString"]!;
+    return ConnectionMultiplexer.Connect(cs);
+});
+
+
+// Options da fila
+builder.Services.Configure<RedisQueueOptions>(builder.Configuration.GetSection("Redis"));
+
+// Producer (para enfileirar)
+builder.Services.AddSingleton<ILoteQueueProducer, LoteQueueProducer>();
+
+// Worker/Consumer (para processar)
+builder.Services.AddHostedService<LoteQueueWorker>();
 
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
@@ -24,8 +52,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.UseAuthorization();
-
-app.MapControllers(); 
+// Mapear controllers
+app.MapControllers();
 
 app.Run();
